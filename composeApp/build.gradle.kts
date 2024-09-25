@@ -28,24 +28,45 @@ kotlin {
     }
 
     sourceSets {
-
         androidMain.dependencies {
             implementation(compose.preview)
             implementation(libs.androidx.activity.compose)
+
+            // CameraX
+            implementation(libs.camera2)
+            implementation(libs.camera.lifecycle)
+            implementation(libs.camera.view)
+
+            // Zxing
+            implementation(libs.google.zxing)
         }
+
         commonMain.dependencies {
             implementation(compose.runtime)
             implementation(compose.foundation)
-            implementation(compose.material)
+            implementation(compose.material3)
             implementation(compose.ui)
             implementation(compose.components.resources)
             implementation(compose.components.uiToolingPreview)
             implementation(libs.androidx.lifecycle.viewmodel)
             implementation(libs.androidx.lifecycle.runtime.compose)
-        }
-        iosMain.dependencies {
 
+            // Voyager
+            implementation(libs.voyager.navigator)
+
+            // ViewModel
+            implementation(libs.lifecycle.viewmodel)
+            implementation(libs.lifecycle.viewmodel.compose)
+
+            // Moko
+            api(libs.moko.permissions)
+            api(libs.moko.permissions.compose)
+
+            // Stately Common
+            implementation(libs.stately.common)
         }
+
+        iosMain.dependencies {}
     }
 }
 
