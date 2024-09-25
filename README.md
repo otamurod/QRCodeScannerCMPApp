@@ -1,14 +1,35 @@
-This is a Kotlin Multiplatform project targeting Android, iOS.
+# QR Code Scanner and Generator App
 
-* `/composeApp` is for code that will be shared across your Compose Multiplatform applications.
-  It contains several subfolders:
-  - `commonMain` is for code that’s common for all targets.
-  - Other folders are for Kotlin code that will be compiled for only the platform indicated in the folder name.
-    For example, if you want to use Apple’s CoreCrypto for the iOS part of your Kotlin app,
-    `iosMain` would be the right folder for such calls.
+## Overview
 
-* `/iosApp` contains iOS applications. Even if you’re sharing your UI with Compose Multiplatform, 
-  you need this entry point for your iOS app. This is also where you should add SwiftUI code for your project.
+The QR Code Scanner and Generator app is a cross-platform application developed using Compose Multiplatform. This app enables users to easily scan and generate QR codes on both Android and iOS devices.
 
+## Features
 
-Learn more about [Kotlin Multiplatform](https://www.jetbrains.com/help/kotlin-multiplatform-dev/get-started.html)…
+- **QR Code Scanning**: Use the device camera to scan QR codes and retrieve the embedded information.
+- **QR Code Creation**: Generate QR codes from text or URLs and share them with others.
+
+## Tech Stack
+
+- **Compose Multiplatform**: Enables code sharing across platforms.
+- **Jetpack Compose**: A modern toolkit for building native UI in Android.
+- **Material3**: Provides a set of design components and styles for a cohesive user experience.
+- **Voyager**: A navigation library for Compose Multiplatform.
+- **CameraX**: Android library for camera functionalities.
+- **ZXing**: A library for barcode scanning.
+- **AVFoundation**: A framework for working with audiovisual media on iOS.
+- **CoreFoundation**: Provides fundamental data types and utilities in iOS.
+- **CoreGraphics**: A framework for 2D graphics rendering.
+- **CoreImage**: Provides image processing capabilities on iOS.
+- **UIKit**: A framework for building user interfaces on iOS.
+
+## Screenshots
+
+## Android
+
+<img width="1512" alt="QR Code Scanner Android" src="https://github.com/user-attachments/assets/f49e6291-d01e-4669-ab72-e5fcd60f19d7">
+
+## iOS
+
+<img width="1512" alt="QR Code Scanner iOS" src="https://github.com/user-attachments/assets/f5658646-1afb-4dfe-9522-36426c56a6da">
+
